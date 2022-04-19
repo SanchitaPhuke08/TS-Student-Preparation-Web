@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>
+        StudPrep | Registration
+    </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="Images/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Latest FA icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FA kit link -->
+    <script src="https://kit.fontawesome.com/274287ca05.js" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
+    <style>
+        body {
+            margin: 50px 0px;
+        }
+
+        .mandatory {
+            color: crimson;
+        }
+
+        .not-active {
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+        .form-div {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a title="Home page" href="../index.html"><i class="fa fa-home"></i></a>
+            </div>
+            <div class="col-md-6 form-div border border-secondary border-2 rounded-2 px-4 py-4">
+                <form name="registerForm" action="login.html" onsubmit="return validateForm(this);" method="POST">
+                    <h4 class="text-center pb-3">Register Here</h4>
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Name<span class="mandatory">*</span></label>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" name="fname" placeholder="First name">
+                                <span id="fname" class="text-danger"> </span>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" name="lname" placeholder="Last name">
+                                <span id="lname" class="text-danger"> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="residenceAddress" class="form-label">Residence Address<span
+                                class="mandatory">*</span></label>
+                        <textarea type="text" class="form-control" name="residenceAddress" rows="2"></textarea>
+                        <span id="residenceAddress" class="text-danger"> </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Contactno" class="form-label">Contact Number<span class="mandatory">*</span></label>
+                        <input type="tel" class="form-control" name="contact" placeholder="Contact no." maxlength="10"
+                            onkeypress="return onlyNumberKey(event);">
+                        <span id="contact" class="text-danger"> </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Age" class="form-label">Age<span class="mandatory">*</span></label>
+                        <input type="text" class="form-control" name="age" placeholder="Age" maxlength="3"
+                            onkeypress="return onlyNumberKey(event);">
+                        <span id="age" class="text-danger"> </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Gender" class="form-label">Gender<span class="mandatory">*</span></label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="genderOptions" id="gender1"
+                                value="Female">
+                            <label class="form-check-label" for="gender1">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="genderOptions" id="gender2" value="Male">
+                            <label class="form-check-label" for="gender2">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="genderOptions" id="gender3"
+                                value="Other">
+                            <label class="form-check-label" for="gender3">Other</label>
+                        </div>
+                        <div id="genderOptions" class="text-danger"> </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Email address<span class="mandatory">*</span></label>
+                        <input type="email" class="form-control" name="email" placeholder="Email address"
+                            onblur="return emailValidate();">
+                        <span id="email" class="text-danger"> </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword" class="form-label">Password<span class="mandatory">*</span></label>
+                        <input type="password" class="form-control" name="password" placeholder="Password"
+                            maxlength="15" onblur="return checkPassword();">
+                        <span id="password" class="text-danger"> </span>
+                    </div>
+                    <input type="submit" value="Sign Up" class="btn customize-btn col-md-12 float-end mb-3">
+                    <div class="mb-3 form-link">
+                        Already registered? <a href="login.html" class="customize-link">Login Now</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+/* ############ COLORS ############## */
+/* ############ END/COLORS ############## */
+/* ############ TYPOGRAPHY ############## */
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:cursive;
+    color: rgb(204, 115, 56);
+}
+a {
+    color: #fe5f55;
+    text-decoration: none;
+    outline: none;
+}
+a:hover, a:focus, a:active {
+    color: #db504a;
+}
+/* ############ END/TYPOGRAPHY ############## */
+/* ############ BUTTONS ############## */
+.btn {
+    line-height: 55px;
+    padding: 0 20px;
+    border-radius: 55px;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+    outline: none;
+}
+.btn:hover, .btn:focus {
+    color: #fe5f55;
+    border-color: #fe5f55;
+}
+.btn:active {
+    color: #db504a;
+    border-color: #db504a;
+}
+/* ############ END/BUTTONS ############## */
+body {
+  background-image: url('relax.jpg');
+  background-size: cover;
+background-repeat: no-repeat;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    color: black;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.green {
+    color: #312b7e;
+}
+.blue {
+    color: #5a2548;
+}
+.red {
+    color: #db504a;
+}
+.container {
+    margin: 20px auto 0 auto;
+    text-align: center;
+    width: 500px !important;
+    min-height: 600px;
+    background: #e3dedee0;
+    /* background: -webkit-radial-gradient(#575065, #3a3545); */
+   /* Safari 5.1 to 6.0 */
+    /* background: -o-radial-gradient(#575065, #3a3545); */
+   /* For Opera 11.6 to 12.0 */
+    /* background: -moz-radial-gradient(#575065, #3a3545); */
+   /* For Firefox 3.6 to 15 */
+    /* background: radial-gradient(#575065, #3a3545); */
+   /* Standard syntax */
+    -webkit-box-shadow: 0px 5px 16px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 16px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 16px 6px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+.clear {
+    clear: both;
+}
+#output {
+    font-size: 60px;
+    padding: 5px;
+}
+.timer {
+    font-size: 25px;
+    float: left;
+    padding: 0 10px 10px 50px;
+    cursor: pointer;
+}
+.timer:hover, .timer:focus {
+    color: #fe5f55;
+    border-color: #fe5f55;
+}
+.timer:active {
+    color: #db504a;
+    border-color: #db504a;
+}
+.timer #timer-input {
+    padding: 16px;
+}
+.break {
+    cursor: pointer;
+    font-size: 25px;
+    padding: 0 10px 10px 10px;
+}
+.break:hover, .break:focus {
+    color: #fe5f55;
+    border-color: #fe5f55;
+}
+.break:active {
+    color: #db504a;
+    border-color: #db504a;
+}
+.break #break-input {
+    padding: 15px;
+}
+p {
+    margin-top: 0;
+    font-size: 20px;
+}
+.buttons {
+    padding: 10px;
+}
+.buttons button {
+    cursor: pointer;
+    margin: 5px;
+}
+.slider span {
+    float: center;
+    margin-left: 65px;
+    padding-top: 30px !important;
+}
+.slider #volume {
+    padding-top: 2px;
+    width: 150px;
+    float: right;
+    margin-right: 85px;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+.select span {
+    float: center;
+    margin-left: 80px;
+    margin-top: 25px !important;
+}
+select {
+    cursor: pointer;
+    float: right;
+    margin: 15px 80px 0 0;
+    background: whitesmoke;
+    padding: 5px 68px 5px 5px;
+    border: solid black 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+}
+select:active, select:hover, select:focus {
+    background: white;
+    color:black;
+}
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+/*+++++++++++++++++++++++++++++*/
+input {
+    background: transparent;
+}
+[type=range] {
+    -webkit-appearance: none;
+    margin: 15px 0;
+    width: 100%;
+}
+[type=range]:focus {
+    outline: none;
+}
+[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+    background: #ebebeb;
+    border: 0px solid #000;
+    border-radius: 0px;
+}
+[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #111, 0 0 0px #1e1e1e;
+    border: 1px solid #ebebeb;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: #3a3545;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+}
+[type=range]:focus::-webkit-slider-runnable-track {
+    background: #f8f8f8;
+}
+[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+    background: #ebebeb;
+    border: 0px solid #000;
+    border-radius: 0px;
+}
+[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #111, 0 0 0px #1e1e1e;
+    border: 1px solid #ebebeb;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: #3a3545;
+    cursor: pointer;
+}
+[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: transparent;
+    border-color: transparent;
+    border-width: 30px 0;
+    color: transparent;
+}
+[type=range]::-ms-fill-lower {
+    box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+    background: #dedede;
+    border: 0px solid #000;
+    border-radius: 0px;
+}
+[type=range]::-ms-fill-upper {
+    box-shadow: 0px 0px 0px #222, 0 0 0px #2f2f2f;
+    background: #ebebeb;
+    border: 0px solid #000;
+    border-radius: 0px;
+}
+[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #111, 0 0 0px #1e1e1e;
+    border: 1px solid #ebebeb;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: #3a3545;
+    cursor: pointer;
+}
+[type=range]:focus::-ms-fill-lower {
+    background: #ebebeb;
+}
+[type=range]:focus::-ms-fill-upper {
+    background: #f8f8f8;
+}

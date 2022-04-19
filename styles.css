@@ -1,0 +1,117 @@
+
+/* .topNav {
+  background-color: rgb(153 144 150) !important;
+}
+.fa {
+  color: #fff;
+}
+.fa-home {
+  font-size: 25px !important;
+}
+.fa-search,
+.fa-user-circle {
+  font-size: 20px !important;
+}
+/* .tagline{
+    font-size: 10px !important;
+    font-style: italic;
+} */
+.float-right {
+  float: right !important;
+}
+.dropdown-menu {
+  top: 100%;
+  left: -100px !important;
+  margin-top: 0.125rem;
+}
+.main-wrapper {
+  padding: 10px 20px;
+  overflow-x: hidden !important;
+  height: 500px;
+  min-height: 70%;
+}
+.cards-wrapper {
+  /* padding: 0px 10px; */
+  overflow-x: hidden !important;
+  /* padding: 35px 0px; */
+  padding-top: 50px;
+
+}
+.customize-card {
+  /* width: 13rem !important; */
+  margin-bottom: 10px !important;
+  cursor: pointer;
+}
+.customize-card:hover {
+  border: 2px solid #0e2666;
+}
+.card-text {
+  font-size: 18px;
+}
+.card-img-top{
+  width: auto !important;
+  max-width: 100% !important;
+}
+footer{
+  /* position: fixed; */
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+.footer-links {
+  color: rgb(255 255 255 / 50%) !important;
+  font-weight: 600 !important;
+}
+.fa-instagram {
+  font-size: 24px !important;
+  color: #df588a !important;
+}
+.fa-facebook-square {
+  font-size: 24px !important;
+  color: #3742d0 !important;
+}
+.fa-whatsapp {
+  font-size: 24px !important;
+  color: #28a745 !important;
+}
+.fa-phone {
+  font-size: 19px !important;
+  color: #20c997 !important;
+}
+.remove-underline {
+  text-decoration: none !important;
+}
+/* customization as per theme */
+.customize-bg-dark {
+  background-color: black !important;
+}
+.customize-btn {
+  /* background-color: #1c3b89 !important; */
+  background-color: #0b1b45 !important;
+  color: #fff !important ;
+}
+.customize-link {
+  color: #1c3b89 !important;
+}
+.remove-anchor-style,
+.remove-anchor-style:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+/* Info Wrapper beolw navbar */
+.info-wrapper {
+  /* background: #cbdaff !important; */
+  padding: 15px 0px;
+}
+.info-content {
+  text-align: justify;
+  padding: 8px 0px;
+  color: #010f23;
+  font-weight: 400;
+}
+
+/* .bg-gradient-info {
+  background-color: #36b9cc;
+  background-image: linear-gradient(180deg, #36b9cc 10%, #258391 100%);
+  background-size: cover;
+} */

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>StudPrep</title>
+    <link rel="shortcut icon" type="image/png" href="yuva - Copy.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Main CSS -->
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="music.css">
+    <!--<link rel="stylesheet" type="text/css" href="util1.css">
+    <link rel="stylesheet" href="main1.css">-->
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/0288478d4c.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+    <!-- Custom Theme files -->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  </head>
+ 
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- <link rel="stylesheet" href="music.css"> -->
+
+<br>
+
+
+
+
+
+<script>
+function myFunction() {
+  alert('No matter what your history has been, your destiny is what you create today. What are you going to create?');
+}
+</script>
+
+
+
+
+ 
+
+<div class="container">
+  <center><b></b><p id="demo"></p></b> </center>
+
+  <script>
+  setInterval(myTimer, 1000);
+  
+  function myTimer() {
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+  }
+  </script>
+    <header>
+
+        
+      <h1><b>Music timer</b></h1>
+    </header>
+    <br>
+    <main>
+      <div id="main-output">
+        <span id="work-output">BREAK TIME</span>
+        <div id="output">00:00</div>
+      </div>
+      <div class="timer">
+        <p>Break time</p>
+        <span id="timer-decrease"><i class="fa fa-arrow-circle-left fa-lg"></i></span>
+        <span id="timer-input">10</span>
+        <span id="timer-increase"><i class="fa fa-arrow-circle-right fa-lg"></i></span>
+      </div>
+      <div class="break">
+        <p>Work time</p>
+        <span id="break-decrease"><i class="fa fa-arrow-circle-left fa-lg"></i></span>
+        <span id="break-input">15</span>
+        <span id="break-increase"><i class="fa fa-arrow-circle-right fa-lg"></i></span>
+      </div>
+      <div class="buttons">
+        <button id="start" class="btn" onclick="setTimeout(myFunction, 3000)"><i class="fa fa-play fa-lg"></i></button>
+        <button id="stop" class="btn" disabled><i class="fa fa-stop fa-lg" ></i></button>
+        <div class="clear"></div>
+      </div>
+      
+      <div class="slider">
+        
+        <span>Volume</span>
+        <input id="volume" type="range" min="0" max="100" step="5" value="20">
+        <div class="clear"></div>
+      </div>
+      <div class="select">
+        <span>List</span>
+        <select id="radio-list" name="select">
+          <option value="0">I See Fire</option>
+          <option value="1">Memories</option>
+          <option value="2">Perfect</option>
+          <option value="3">I See Fire</option>
+          <option value="4">Memories</option>
+          <option value="5">Perfect</option>
+        </select>
+      </div>
+      <div class="clear"></div>
+    </main>
+    
+  </div>
+  
+ 
+
+
+  <script src="music.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </html>
